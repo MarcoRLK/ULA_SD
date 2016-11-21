@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1476883960">
+  <File Type="OPT-DCP" Name="HEX_to_SSEG_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="HEX_to_SSEG_route_status.pb"/>
+  <File Type="PA-TCL" Name="HEX_to_SSEG.tcl"/>
+  <File Type="RDI-RDI" Name="HEX_to_SSEG.vdi"/>
+  <File Type="PWROPT-DRC" Name="HEX_to_SSEG_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="HEX_to_SSEG_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="HEX_to_SSEG_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="HEX_to_SSEG_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="HEX_to_SSEG_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="HEX_to_SSEG.hwdef"/>
+  <File Type="OPT-TIMING" Name="HEX_to_SSEG_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="HEX_to_SSEG_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="HEX_to_SSEG_placed.dcp"/>
+  <File Type="PLACE-IO" Name="HEX_to_SSEG_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="HEX_to_SSEG_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="HEX_to_SSEG_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="HEX_to_SSEG_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="HEX_to_SSEG_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="HEX_to_SSEG_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="HEX_to_SSEG_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="HEX_to_SSEG_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="HEX_to_SSEG_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="HEX_to_SSEG_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="HEX_to_SSEG_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="HEX_to_SSEG_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="HEX_to_SSEG_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="HEX_to_SSEG_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="HEX_to_SSEG_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="HEX_to_SSEG_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="HEX_to_SSEG_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="HEX_to_SSEG_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="HEX_to_SSEG.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="HEX_to_SSEG_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="HEX_to_SSEG_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="HEX_to_SSEG_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="HEX_to_SSEG_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="HEX_to_SSEG_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="HEX_to_SSEG_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="HEX_to_SSEG_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="HEX_to_SSEG_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="HEX_to_SSEG_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="HEX_to_SSEG_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="HEX_to_SSEG_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="HEX_to_SSEG_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HEX_to_SSEG_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HEX_to_SSEG_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HEX_to_SSEG_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="HEX_to_SSEG.bin"/>
+  <File Type="BITSTR-MSK" Name="HEX_to_SSEG.msk"/>
+  <File Type="BITSTR-RBT" Name="HEX_to_SSEG.rbt"/>
+  <File Type="BITSTR-NKY" Name="HEX_to_SSEG.nky"/>
+  <File Type="BITSTR-BMM" Name="HEX_to_SSEG_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="HEX_to_SSEG.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="HEX_to_SSEG.sysdef"/>
+  <File Type="BG-BGN" Name="HEX_to_SSEG.bgn"/>
+  <File Type="BG-DRC" Name="HEX_to_SSEG.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/prerel6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="HEX_to_SSEG"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Desktop/PED/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
