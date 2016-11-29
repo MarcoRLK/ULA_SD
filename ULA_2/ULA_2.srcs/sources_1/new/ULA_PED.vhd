@@ -24,6 +24,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
+
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -60,6 +62,9 @@ architecture Behavioral of ULA_PED is
     signal hex3 : std_logic_vector (3 downto 0);
     signal hex4 : std_logic_vector (3 downto 0);
     signal F : std_logic_vector (3 downto 0);
+    signal cnt   : std_logic_vector(3 downto 0);
+    signal Atemp   : std_logic_vector(3 downto 0);
+    signal R   : std_logic_vector(3 downto 0);
 
 begin clock_divider: process(clk)
 begin
@@ -72,6 +77,7 @@ end process;
 
 process(A,B,sel)
 begin
+
      if sel = "0000" then --ZERA
          F <= "0000";
          error <= '0';
@@ -150,10 +156,27 @@ begin
          end if;
      elsif sel = "1011" then -- DIV (A/B)
         --F <= conv_std_logic_vector(A / B, 4);
-        error <= '1';
+        --error <= '1';
+        cnt   <= "0000";
+        Atemp <= A;
+        while (Atemp >= B) loop
+          Atemp <= (Atemp - B);
+          cnt   <= cnt + "0001";
+        end loop;
+        F <= cnt; --O contador é a resposta da divisão
+        R <= Atemp; --Resto
+  
      elsif sel = "1100" then -- MOD (A mod B)
         --F <= conv_std_logic_vector(A mod B, 4);
-        error <= '1';
+        --error <= '1';
+        cnt   <= "0000";
+        Atemp <= A;
+        while (Atemp >= B) loop
+          Atemp <= (Atemp - B);
+          cnt   <= cnt + "0001";
+        end loop;
+        F <= Atemp; --MOD (resto)
+        
      elsif sel = "1101" then -- QUADRADO DE A
          temp8 <= A * A;
          if temp8 > "00001111" then -- Overflow
