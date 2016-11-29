@@ -4,7 +4,7 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-create_project -in_memory -part xc7a50tftg256-2
+create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -17,8 +17,11 @@ read_vhdl -library xil_defaultlib {{C:/Users/Marco/Google Drive/Engenharia/SD1/P
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/Basys3_Master.xdc}}]
 
-synth_design -top ULA_PED -part xc7a50tftg256-2
+
+synth_design -top ULA_PED -part xc7a35tcpg236-1
 
 
 write_checkpoint -force -noxdef ULA_PED.dcp

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a50tftg256-2" LaunchTime="1480377223">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1480458977">
   <File Type="OPT-DCP" Name="ULA_PED_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="ULA_PED_route_status.pb"/>
   <File Type="PA-TCL" Name="ULA_PED.tcl"/>
@@ -73,6 +73,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Mon Nov 28 21:53:44 2016
-# Process ID: 9536
+# Start of session at: Tue Nov 29 20:36:18 2016
+# Process ID: 4880
 # Current directory: C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.runs/synth_1
 # Command line: vivado.exe -log ULA_PED.vds -mode batch -messageDb vivado.pb -notrace -source ULA_PED.tcl
 # Log file: C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.runs/synth_1/ULA_PED.vds

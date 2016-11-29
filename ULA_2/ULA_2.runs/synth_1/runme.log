@@ -9,54 +9,92 @@
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 source ULA_PED.tcl -notrace
-Command: synth_design -top ULA_PED -part xc7a50tftg256-2
+Command: synth_design -top ULA_PED -part xc7a35tcpg236-1
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1356 
+INFO: Helper process launched with PID 5360 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 272.875 ; gain = 65.660
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 272.160 ; gain = 65.633
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ULA_PED' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:46]
-WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:64]
-WARNING: [Synth 8-614] signal 'temp8a' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:73]
-WARNING: [Synth 8-614] signal 'temp8b' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:73]
-WARNING: [Synth 8-614] signal 'temp8' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:73]
-INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:186]
-INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:191]
-INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:196]
-INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:201]
-WARNING: [Synth 8-614] signal 'error' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:183]
-INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:221]
-INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:233]
-INFO: [Synth 8-256] done synthesizing module 'ULA_PED' (1#1) [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'ULA_PED' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:49]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:69]
+WARNING: [Synth 8-614] signal 'temp8a' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+WARNING: [Synth 8-614] signal 'temp8b' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+WARNING: [Synth 8-614] signal 'temp8' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+WARNING: [Synth 8-614] signal 'Auns' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+WARNING: [Synth 8-614] signal 'Buns' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+WARNING: [Synth 8-614] signal 'Quns' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+WARNING: [Synth 8-614] signal 'Runs' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:78]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:222]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:227]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:232]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:237]
+WARNING: [Synth 8-614] signal 'error' is read in the process but is not in the sensitivity list [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:219]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:257]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:269]
+INFO: [Synth 8-256] done synthesizing module 'ULA_PED' (1#1) [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:49]
 WARNING: [Synth 8-3331] design ULA_PED has unconnected port mode[1]
 WARNING: [Synth 8-3331] design ULA_PED has unconnected port mode[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 310.246 ; gain = 103.031
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 309.512 ; gain = 102.984
 ---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 310.246 ; gain = 103.031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 309.512 ; gain = 102.984
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ULA_PED_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ULA_PED_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 599.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a50tftg256-2
-INFO: [Device 21-403] Loading part xc7a50tftg256-2
+Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 310.246 ; gain = 103.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:75]
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 599.094 ; gain = 392.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:86]
 INFO: [Synth 8-5544] ROM "cathode_select" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "digit_pattern_array" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'error_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:77]
-WARNING: [Synth 8-327] inferring latch for variable 'F_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:76]
-WARNING: [Synth 8-327] inferring latch for variable 'temp8_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:120]
-WARNING: [Synth 8-327] inferring latch for variable 'temp8a_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:112]
-WARNING: [Synth 8-327] inferring latch for variable 'temp8b_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:116]
+WARNING: [Synth 8-327] inferring latch for variable 'error_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'F_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 'temp8_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:132]
+WARNING: [Synth 8-327] inferring latch for variable 'Runs_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:177]
+WARNING: [Synth 8-327] inferring latch for variable 'Quns_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:176]
+WARNING: [Synth 8-327] inferring latch for variable 'temp8a_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'temp8b_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:128]
+WARNING: [Synth 8-327] inferring latch for variable 'Buns_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:174]
+WARNING: [Synth 8-327] inferring latch for variable 'Auns_reg' [C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.srcs/sources_1/new/ULA_PED.vhd:173]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 326.652 ; gain = 119.438
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -64,7 +102,6 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -82,12 +119,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	  16 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 14    
 	   8 Input      4 Bit        Muxes := 2     
 	   8 Input      3 Bit        Muxes := 1     
 	   9 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 18    
-	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -111,12 +148,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	  16 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 14    
 	   8 Input      4 Bit        Muxes := 2     
 	   8 Input      3 Bit        Muxes := 1     
 	   9 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 18    
-	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -125,28 +162,27 @@ Finished RTL Hierarchical Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 120 (col length:60)
-BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 400.781 ; gain = 193.566
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design ULA_PED has unconnected port mode[1]
 WARNING: [Synth 8-3331] design ULA_PED has unconnected port mode[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 401.133 ; gain = 193.918
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 401.133 ; gain = 193.918
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 599.094 ; gain = 392.566
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
@@ -161,11 +197,10 @@ WARNING: [Synth 8-3332] Sequential element (count_reg[21]) is unused and will be
 WARNING: [Synth 8-3332] Sequential element (count_reg[22]) is unused and will be removed from module ULA_PED.
 WARNING: [Synth 8-3332] Sequential element (digit_pattern_array_reg[4]) is unused and will be removed from module ULA_PED.
 WARNING: [Synth 8-3332] Sequential element (digit_pattern_array_reg[0]) is unused and will be removed from module ULA_PED.
-WARNING: [Synth 8-3332] Sequential element (error_reg) is unused and will be removed from module ULA_PED.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 422.762 ; gain = 215.547
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 422.762 ; gain = 215.547
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 599.094 ; gain = 392.566
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -175,9 +210,21 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 422.762 ; gain = 215.547
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (count_reg[16]) is unused and will be removed from module ULA_PED.
+WARNING: [Synth 8-3332] Sequential element (count_reg[17]) is unused and will be removed from module ULA_PED.
+WARNING: [Synth 8-3332] Sequential element (count_reg[18]) is unused and will be removed from module ULA_PED.
+WARNING: [Synth 8-3332] Sequential element (count_reg[19]) is unused and will be removed from module ULA_PED.
+WARNING: [Synth 8-3332] Sequential element (count_reg[20]) is unused and will be removed from module ULA_PED.
+WARNING: [Synth 8-3332] Sequential element (count_reg[21]) is unused and will be removed from module ULA_PED.
+WARNING: [Synth 8-3332] Sequential element (count_reg[22]) is unused and will be removed from module ULA_PED.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -189,16 +236,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -215,7 +262,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -228,7 +275,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,25 +287,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -277,44 +324,46 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     8|
 |3     |LUT1   |    18|
-|4     |LUT2   |     9|
+|4     |LUT2   |    10|
 |5     |LUT3   |     6|
-|6     |LUT4   |    20|
-|7     |LUT5   |    14|
-|8     |LUT6   |    47|
-|9     |FDRE   |    25|
-|10    |FDSE   |     2|
-|11    |LD     |    16|
-|12    |LDCP   |     4|
-|13    |IBUF   |    13|
-|14    |OBUF   |    11|
+|6     |LUT4   |    26|
+|7     |LUT5   |    24|
+|8     |LUT6   |    63|
+|9     |MUXF7  |     3|
+|10    |MUXF8  |     1|
+|11    |FDRE   |    25|
+|12    |FDSE   |     2|
+|13    |LD     |    33|
+|14    |LDCP   |     4|
+|15    |IBUF   |    13|
+|16    |OBUF   |    11|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   194|
+|1     |top      |       |   248|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 599.094 ; gain = 392.566
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 425.660 ; gain = 218.445
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 425.660 ; gain = 218.445
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 599.094 ; gain = 102.984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 599.094 ; gain = 392.566
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 20 instances were transformed.
-  LD => LDCE: 16 instances
+  A total of 37 instances were transformed.
+  LD => LDCE: 33 instances
   LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-22 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+25 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 504.453 ; gain = 297.238
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 504.453 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 28 21:54:04 2016...
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 599.094 ; gain = 392.566
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 599.094 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 20:36:53 2016...
