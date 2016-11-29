@@ -1,5 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../prerel6.srcs/sources_1/new/prerel6.vhd"
-
-# Do not sort compile order
-nosort

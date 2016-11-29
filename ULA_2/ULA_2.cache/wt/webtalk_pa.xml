@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Nov 29 02:38:14 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="80ff245b63074fbeba3b20d2f66e2faf" type="ProjectID"/>
+<property name="ProjectIteration" value="3" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, Add or create constraints" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, Add Files" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 3, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 3, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2, true" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2, true, false, false, false, true, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StateMonitor_CANCEL, Cancel" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StateMonitor_RESET_RUN, Reset Run" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 101, 232" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 101, 245" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 102, 315" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 103, 301" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 104, 124" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 105, 164" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 107, 247" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 107, 355" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 107, 94" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 108, 258" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 108, 85" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 112, 333" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 113, 279" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 114, 195" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 119, 192" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 121, 168" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 122, 48" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 124, 174" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 125, 311" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 134, 402" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 135, 284" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 138, 292" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 142, 287" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 143, 278" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 147, 354" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 148, 232" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 150, 300" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 151, 143" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 151, 304" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 157, 162" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 159, 259" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 160, 202" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 161, 146, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 161, 147" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 161, 180" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 162, 383" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 166, 145" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 166, 317" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 166, 97" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 168, 353" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 170, 280" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 172, 294" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 179, 222" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 182, 247" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 185, 264" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 186, 151" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 189, 216" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 189, 247" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 189, 302" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 190, 312" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 191, 278" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 192, 281" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 192, 382" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 193, 213" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 194, 204" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 194, 241" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 194, 363" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 195, 199" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 195, 230" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 197, 162" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 199, 206" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 199, 247" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 201, 296" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 201, 368" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 202, 132" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 202, 142" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 202, 267" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 203, 223" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 203, 252" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 203, 294" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 204, 201" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 205, 362" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 207, 130" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 207, 178" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 207, 311" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 208, 223" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 208, 377" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 209, 229" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 209, 330" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 210, 112" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 212, 368" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 214, 217" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 215, 194" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 215, 368" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 217, 231" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 218, 181" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 218, 199" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 218, 251" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 218, 294" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 219, 113" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 219, 215" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 219, 365" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 220, 137" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 221, 133" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 222, 229" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 223, 234" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 223, 235" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 224, 182" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 225, 157" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 225, 368" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 227, 243" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 229, 204" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 229, 264" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 230, 263" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 230, 265" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 231, 254" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 232, 282" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 233, 264" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 233, 266" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 233, 306" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 234, 308" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 235, 248" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 235, 365" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 237, 181" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 237, 213" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 146" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 162" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 162, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 196" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 197" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 300" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 347" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 238, 355" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 239, 126" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 239, 165" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 239, 201" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 24, 126" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 242, 243" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 242, 349" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 243, 350" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 244, 275" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 244, 294" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 245, 194" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 245, 247" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 245, 328" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 245, 87" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 246, 276" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 247, 161" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 247, 335" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 248, 148" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 248, 154" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 248, 344" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 249, 143" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 250, 350" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 251, 175" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 252, 269" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 252, 306" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 253, 210" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 255, 164" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 258, 341" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 259, 176" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 259, 315" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 261, 143" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 263, 146" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 269, 179" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 269, 287" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 273, 145" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 274, 244" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 275, 202" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 276, 318" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 277, 303" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 279, 196" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 279, 91" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 279, 91, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 280, 358" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 282, 212" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 283, 313" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 284, 113" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 284, 286" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 286, 231" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 291, 291" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 294, 295" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 297, 190" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 307, 236" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 308, 281" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 31, 233" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 311, 272" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 311, 285" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 316, 246" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 317, 196" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 318, 293" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 323, 93" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 33, 179" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 33, 247" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 33, 310" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 330, 266" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 331, 179" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 335, 340" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 338, 110" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 339, 162" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 34, 260" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 343, 110" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 346, 189" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 35, 146" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 35, 200" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 35, 230" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 35, 249" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 350, 350" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 354, 194" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 354, 225" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 357, 215" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 359, 317" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 36, 145" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 360, 290" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 360, 316" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 363, 211" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 364, 278" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 364, 298" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 369, 176" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 370, 327" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 371, 192" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 373, 339" value="2" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 373, 339, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 377, 198" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 377, 229" value="2" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 377, 229, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 379, 245" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 380, 155" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 380, 308" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 382, 210" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 384, 197" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 386, 224" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 388, 331" value="3" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 388, 331, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 39, 199" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 39, 367" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 39, 367, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 39, 90" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 392, 255" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 400, 277" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 402, 228" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 405, 296" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 405, 90" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 405, 90, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 406, 309" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 415, 194" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 435, 198" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 438, 168" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 443, 79" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 447, 246" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 450, 129" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 464, 177" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 468, 129" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 47, 227" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 47, 63" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 477, 170" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 490, 76" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 509, 114" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 536, 183" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 550, 124" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 56, 108" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 574, 118" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 604, 66" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 615, 109" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 62, 251" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 63, 228" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 74, 216" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 75, 160" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 82, 146" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 86, 227" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 86, 63" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 89, 142" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 93, 329" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 97, 267" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 98, 263" value="1" type="GuiResourceData"/>
+<property name="ULA_PED.vhd, 99, 259" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="17" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="16" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
