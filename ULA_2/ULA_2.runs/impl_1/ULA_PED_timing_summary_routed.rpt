@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Nov 29 20:38:02 2016
+| Date         : Wed Nov 30 00:50:01 2016
 | Host         : DESKTOP-H8D297J running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ULA_PED_timing_summary_routed.rpt -rpx ULA_PED_timing_summary_routed.rpx
 | Design       : ULA_PED
@@ -68,6 +68,10 @@ Table of Contents
 
  There are 5 register/latch pins with no clock driven by root clock pin: B[3] (HIGH)
 
+ There are 5 register/latch pins with no clock driven by root clock pin: mode[0] (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: mode[1] (HIGH)
+
  There are 37 register/latch pins with no clock driven by root clock pin: sel[0] (HIGH)
 
  There are 37 register/latch pins with no clock driven by root clock pin: sel[1] (HIGH)
@@ -76,7 +80,15 @@ Table of Contents
 
  There are 37 register/latch pins with no clock driven by root clock pin: sel[3] (HIGH)
 
- There are 11 register/latch pins with no clock driven by root clock pin: count_reg[15]/C (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: F_reg[1]/L7/G (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: F_reg[2]/L7/G (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: F_reg[3]/L7/G (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: count_reg[15]/C (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: error_reg/G (HIGH)
 
 
 2. checking constant_clock
@@ -91,14 +103,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 50 pins that are not constrained for maximum delay. (HIGH)
+ There are 62 pins that are not constrained for maximum delay. (HIGH)
 
- There are 0 pins that are not constrained for maximum delay due to constant clock.
+ There are 8 pins that are not constrained for maximum delay due to constant clock. (MEDIUM)
 
 
 5. checking no_input_delay
 --------------------------
- There are 12 input ports with no input delay specified. (HIGH)
+ There are 14 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
@@ -1332,19 +1344,19 @@ Slack (MET) :             0.256ns  (arrival time - required time)
   -------------------------------------------------------------------
                          slack                                  0.256    
 
-Slack (MET) :             0.256ns  (arrival time - required time)
-  Source:                 count_reg[6]/C
+Slack (MET) :             0.274ns  (arrival time - required time)
+  Source:                 count_reg[15]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            count_reg[6]/D
+  Destination:            count_reg[15]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.361ns  (logic 0.252ns (69.733%)  route 0.109ns (30.267%))
+  Data Path Delay:        0.379ns  (logic 0.249ns (65.667%)  route 0.130ns (34.333%))
   Logic Levels:           1  (CARRY4=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.978ns
-    Source Clock Delay      (SCD):    1.466ns
+    Destination Clock Delay (DCD):    1.977ns
+    Source Clock Delay      (SCD):    1.465ns
     Clock Pessimism Removal (CPR):    0.512ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1356,15 +1368,15 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
-                         net (fo=16, routed)          0.583     1.466    clk_IBUF_BUFG
-    SLICE_X65Y23         FDRE                                         r  count_reg[6]/C
+                         net (fo=16, routed)          0.582     1.465    clk_IBUF_BUFG
+    SLICE_X65Y25         FDRE                                         r  count_reg[15]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X65Y23         FDRE (Prop_fdre_C_Q)         0.141     1.607 r  count_reg[6]/Q
-                         net (fo=1, routed)           0.109     1.717    count_reg_n_0_[6]
-    SLICE_X65Y23         CARRY4 (Prop_carry4_S[2]_O[2])
-                                                      0.111     1.828 r  count_reg[4]_i_1/O[2]
-                         net (fo=1, routed)           0.000     1.828    count_reg[4]_i_1_n_5
-    SLICE_X65Y23         FDRE                                         r  count_reg[6]/D
+    SLICE_X65Y25         FDRE (Prop_fdre_C_Q)         0.141     1.606 r  count_reg[15]/Q
+                         net (fo=14, routed)          0.130     1.736    MUX_CLK
+    SLICE_X65Y25         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     1.844 r  count_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.844    count_reg[12]_i_1_n_4
+    SLICE_X65Y25         FDRE                                         r  count_reg[15]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1374,15 +1386,15 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=16, routed)          0.851     1.978    clk_IBUF_BUFG
-    SLICE_X65Y23         FDRE                                         r  count_reg[6]/C
-                         clock pessimism             -0.512     1.466    
-    SLICE_X65Y23         FDRE (Hold_fdre_C_D)         0.105     1.571    count_reg[6]
+                         net (fo=16, routed)          0.850     1.977    clk_IBUF_BUFG
+    SLICE_X65Y25         FDRE                                         r  count_reg[15]/C
+                         clock pessimism             -0.512     1.465    
+    SLICE_X65Y25         FDRE (Hold_fdre_C_D)         0.105     1.570    count_reg[15]
   -------------------------------------------------------------------
-                         required time                         -1.571    
-                         arrival time                           1.828    
+                         required time                         -1.570    
+                         arrival time                           1.844    
   -------------------------------------------------------------------
-                         slack                                  0.256    
+                         slack                                  0.274    
 
 
 

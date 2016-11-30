@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue Nov 29 20:38:02 2016
+| Date             : Wed Nov 30 00:50:02 2016
 | Host             : DESKTOP-H8D297J running 64-bit major release  (build 9200)
 | Command          : report_power -file ULA_PED_power_routed.rpt -pb ULA_PED_power_summary_routed.pb -rpx ULA_PED_power_routed.rpx
 | Design           : ULA_PED
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      228 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      118 |     20800 |            0.57 |
+| Slice Logic    |    <0.001 |      254 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      128 |     20800 |            0.62 |
 |   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
-|   Register     |    <0.001 |       64 |     41600 |            0.15 |
+|   Register     |    <0.001 |       75 |     41600 |            0.18 |
 |   F7/F8 Muxes  |    <0.001 |        4 |     32600 |            0.01 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |    <0.001 |      196 |       --- |             --- |
-| I/O            |     0.015 |       24 |       106 |           22.64 |
+|   Others       |     0.000 |       14 |       --- |             --- |
+| Signals        |    <0.001 |      220 |       --- |             --- |
+| I/O            |     0.016 |       26 |       106 |           24.53 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.089 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -135,14 +135,15 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------+-----------+
-| Name       | Power (W) |
-+------------+-----------+
-| ULA_PED    |     0.017 |
-|   F_reg[0] |    <0.001 |
-|   F_reg[1] |    <0.001 |
-|   F_reg[2] |    <0.001 |
-|   F_reg[3] |    <0.001 |
-+------------+-----------+
++---------------+-----------+
+| Name          | Power (W) |
++---------------+-----------+
+| ULA_PED       |     0.017 |
+|   F_reg[0]    |    <0.001 |
+|   F_reg[1]    |    <0.001 |
+|   F_reg[2]    |    <0.001 |
+|   F_reg[3]    |    <0.001 |
+|   hex2_reg[1] |    <0.001 |
++---------------+-----------+
 
 

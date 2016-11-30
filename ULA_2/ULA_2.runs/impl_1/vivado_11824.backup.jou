@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Nov 30 00:49:07 2016
+# Process ID: 11824
+# Current directory: C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.runs/impl_1
+# Command line: vivado.exe -log ULA_PED.vdi -applog -messageDb vivado.pb -mode batch -source ULA_PED.tcl -notrace
+# Log file: C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.runs/impl_1/ULA_PED.vdi
+# Journal file: C:/Users/Marco/Google Drive/Engenharia/SD1/PED/ULA_2/ULA_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ULA_PED.tcl -notrace

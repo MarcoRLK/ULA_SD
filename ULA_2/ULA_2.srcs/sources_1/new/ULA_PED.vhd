@@ -181,7 +181,7 @@ begin
      elsif sel = "1100" then -- MOD (A mod B)
         --F <= conv_std_logic_vector(A mod B, 4);
         --error <= '1';
-                Auns <= unsigned(A);
+          Auns <= unsigned(A);
           Buns <= unsigned(B);
           --Do the division:
           Quns <= Auns/Buns;
@@ -216,30 +216,62 @@ begin
     
 end process;
 
-process(F)
+process(F, mode)
     begin
     if error = '0' then
-        case F(0) is
-             when '0' => hex1 <= "0000";
-             when '1' => hex1 <= "0001";
-             when others => NULL;
-        end case;
-        case F(1) is
-             when '0' => hex2 <= "0000";
-             when '1' => hex2 <= "0001";
-             when others => NULL;
-        end case;
-        case F(2) is
-             when '0' => hex3 <= "0000";
-             when '1' => hex3 <= "0001";
-             when others => NULL;
-        end case;
-        case F(3) is
-             when '0' => hex4 <= "0000";
-             when '1' => hex4 <= "0001";
-             when others => NULL;
-        end case;
-    elsif error = '1' then -- Alterar junto com o vetor DOWNTO - deve estar de trás pra frente
+        if mode = "10" then --Binário
+            case F(0) is
+                 when '0' => hex1 <= "0000";
+                 when '1' => hex1 <= "0001";
+                 when others => NULL;
+            end case;
+            case F(1) is
+                 when '0' => hex2 <= "0000";
+                 when '1' => hex2 <= "0001";
+                 when others => NULL;
+            end case;
+            case F(2) is
+                 when '0' => hex3 <= "0000";
+                 when '1' => hex3 <= "0001";
+                 when others => NULL;
+            end case;
+            case F(3) is
+                 when '0' => hex4 <= "0000";
+                 when '1' => hex4 <= "0001";
+                 when others => NULL;
+            end case;
+        elsif mode = "00" then -- Decimal
+            if F > "0101" then
+                hex1 <= F - "1010";
+                hex2 <= "0001";
+                hex3 <= "XXXX";
+                hex4 <= "XXXX";
+            else
+                hex1 <= F;
+                hex2 <= "XXXX";
+                hex3 <= "XXXX";
+                hex4 <= "XXXX";
+            end if;
+        elsif mode = "01" then --Hexadecimal
+                hex1 <= F;
+                hex2 <= "XXXX";
+                hex3 <= "XXXX";
+                hex4 <= "XXXX";
+        elsif mode = "11" then -- Octal
+            if F > "0111" then
+                hex1 <=  F - "1000";
+                hex2 <= "0001";
+                hex3 <= "XXXX";
+                hex4 <= "XXXX";
+            else
+                hex1 <=  F;
+                hex2 <= "XXXX";
+                hex3 <= "XXXX";
+                hex4 <= "XXXX";
+            end if;
+        end if;
+        
+    elsif error = '1' then
          hex1 <= "0000";
          hex2 <= "1111";
          hex3 <= "1111";
@@ -266,7 +298,7 @@ begin
              when others => null;
          end case;
         
-         case current_BCD_digit is --ALTERAR junto com o vetor "DOWNTO".
+         case current_BCD_digit is
              when "0000" => digit_pattern_array <= "1000000";
              when "0001" => digit_pattern_array <= "1111001";
              when "0010" => digit_pattern_array <= "0010010";

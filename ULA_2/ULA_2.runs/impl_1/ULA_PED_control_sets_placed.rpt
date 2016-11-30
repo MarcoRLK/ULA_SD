@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Nov 29 20:37:28 2016
+| Date         : Wed Nov 30 00:49:33 2016
 | Host         : DESKTOP-H8D297J running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ULA_PED_control_sets_placed.rpt
 | Design       : ULA_PED
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    11 |
-| Unused register locations in slices containing registers |    48 |
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    77 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,9 +33,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              62 |           23 |
+| No           | No                    | No                     |              63 |           25 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               2 |            1 |
+| No           | Yes                   | No                     |              12 |            6 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -48,16 +48,21 @@ Table of Contents
 +------------------------+---------------+---------------------------+------------------+----------------+
 |      Clock Signal      | Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
 +------------------------+---------------+---------------------------+------------------+----------------+
+|  hex2_reg[1]/G0        |               |                           |                1 |              1 |
 |  F_reg[3]/G0           |               |                           |                1 |              1 |
 |  F_reg[2]/G0           |               |                           |                1 |              1 |
 |  F_reg[1]/G0           |               |                           |                1 |              1 |
 |  F_reg[0]/G0           |               |                           |                1 |              1 |
 |  error_reg_i_2_n_0     |               |                           |                1 |              1 |
+|  hex2_reg[1]_i_1_n_0   |               | hex2_reg[0]_i_2_n_0       |                1 |              1 |
 |  MUX_CLK               |               | cathode_select[1]_i_1_n_0 |                1 |              2 |
+|  MUX_CLK               |               | current_segment[1]        |                1 |              2 |
+|  hex4_reg[0]_i_1_n_0   |               | error                     |                1 |              3 |
+|                        |               | error                     |                2 |              4 |
 |  temp8_reg[7]_i_2_n_0  |               |                           |                2 |              8 |
 |  temp8a_reg[3]_i_1_n_0 |               |                           |                2 |              8 |
 |  MUX_CLK               |               |                           |                3 |              9 |
-|  Runs_reg[3]_i_2_n_0   |               |                           |                7 |             16 |
+|  Runs_reg[3]_i_2_n_0   |               |                           |                8 |             16 |
 |  clk_IBUF_BUFG         |               |                           |                4 |             16 |
 +------------------------+---------------+---------------------------+------------------+----------------+
 

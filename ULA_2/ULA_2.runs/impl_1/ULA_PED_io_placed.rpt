@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Nov 29 20:37:28 2016
+| Date         : Wed Nov 30 00:49:33 2016
 | Host         : DESKTOP-H8D297J running 64-bit major release  (build 9200)
 | Command      : report_io -file ULA_PED_io_placed.rpt
 | Design       : ULA_PED
@@ -209,8 +209,8 @@ Table of Contents
 | R18        |             | High Range | IO_L14N_T2_SRCC_14           | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | R19        |             | High Range | IO_L10N_T1_D15_14            | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | T1         | sel[2]      | High Range | IO_L3P_T0_DQS_34             | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
-| T2         |             | High Range | IO_L1N_T0_34                 | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| T3         |             | High Range | IO_L2N_T0_34                 | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| T2         | mode[1]     | High Range | IO_L1N_T0_34                 | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| T3         | mode[0]     | High Range | IO_L2N_T0_34                 | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | T17        |             | High Range | IO_L17P_T2_A14_D30_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | T18        |             | High Range | IO_L17N_T2_A13_D29_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | T19        |             |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
